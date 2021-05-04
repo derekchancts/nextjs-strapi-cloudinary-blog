@@ -1,0 +1,24 @@
+.container {
+  max-width: 600px;
+}
+
+
+.title {
+  text-align: center;
+  margin: 3rem auto;
+  text-transform: uppercase;
+}
+
+.content {
+  text-align: center;
+}
+
+.picture {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.footer p{
+  text-align: center;
+  margin-top: 1rem;
+}

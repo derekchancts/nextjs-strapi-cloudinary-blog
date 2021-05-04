@@ -1,3 +1,4 @@
+
 html,
 body {
   padding: 0;
@@ -13,4 +14,104 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+
+.nav_container {
+  max-width: 1200px;
+  /* max-width: 100vw; */
+  margin: 0 auto;
+}
+
+
+.container {
+  /* max-width: 1500px; */
+  /* margin: auto; */
+  width:100%;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+
+
+nav {
+  max-width: 1500px;
+  font-size: 1rem;
+  /* background-color: #f1f1f1; */
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+/* Flex Container */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 0.5rem;
+  flex: auto;
+  text-align: center;
+}
+
+nav ul li:hover {
+  background-color: hsla(0, 0%, 33%, 0.507);
+  color: white;
+}
+
+/* Responsive Nav Bar */
+@media all and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+
+  nav ul li {
+    /* text-align: center; */
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.homepage__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.homepage__container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articles__grid__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 1.5rem;
+}
+.card__article__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.card__article__category {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
 }
